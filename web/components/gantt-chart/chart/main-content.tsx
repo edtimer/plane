@@ -36,8 +36,8 @@ type Props = {
   enableBlockMove: boolean;
   enableBlockRightResize: boolean;
   enableReorder: boolean;
-  enableSelection: boolean;
   enableAddBlock: boolean;
+  enableSelection: boolean;
   itemsContainerWidth: number;
   showAllBlocks: boolean;
   sidebarToRender: (props: any) => React.ReactNode;
@@ -162,7 +162,7 @@ export const GanttChartMainContent: React.FC<Props> = observer((props) => {
               )}
             </div>
           </div>
-          <IssueBulkOperationsRoot selectionHelpers={helpers} />
+          <IssueBulkOperationsRoot />
         </>
       )}
     </MultipleSelectGroup>
